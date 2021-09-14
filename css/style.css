@@ -5,7 +5,7 @@
 body {
   margin: 0 auto;
   color: #3f464d;
-  font-family: "Spoaq Han Sans Neo", "Sans-serif";
+  font-family: "KCC-eunyoung", "Spoaq Han Sans Neo", "Sans-serif";
 }
 
 /* a tag init */
@@ -96,18 +96,7 @@ header {
 }
 
 .head-title .title-first{
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.head-title .title-middle{
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.head-title .title-end{
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* head day css style*/
@@ -163,7 +152,6 @@ header {
 .donedo-item-container {
   height: 100%;
   padding: 0 15px;
-  font-weight: bold;
   font-size: 1.3rem;
   color: #ebeff3;
   display: flex;
@@ -217,4 +205,19 @@ header {
   .inner {
     padding: 0;
   }
+}
+
+/* font */
+
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+.jejumyeongjo * { 
+ font-family: 'Jeju Myeongjo', serif;
+}
+
+@font-face {
+    font-family: 'KCC-eunyoung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
