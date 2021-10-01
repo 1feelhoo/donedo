@@ -5,7 +5,7 @@
 body {
   margin: 0 auto;
   color: #3f464d;
-  font-family: "KCC-eunyoung", "Spoaq Han Sans Neo", "Sans-serif";
+  font-family: "NanumSquare_acR", "Spoaq Han Sans Neo", "Sans-serif";
 }
 
 /* a tag init */
@@ -34,24 +34,22 @@ a:hover {
   color: #3f464d;
 }
 
-.main-container{
-    max-width: 736px;
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    background-color: #C4DDF2;
-    position: relative;
+.main {
+  max-width: 736px;
+  margin: 0 auto;
 }
 
-.main-panel {
-    min-width: 400px;
-    height: 600px;
-    background-color: #07598C;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 8px rgba(25, 42, 70, 0.2);
+.main-container {
+  margin-top: 80px;
+  /* background-color: #07598c; */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(25, 42, 70, 0.2);
+}
+
+section {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
 }
 
 /* inner class */
@@ -78,7 +76,6 @@ header {
   width: 100%;
   height: 100%;
   background-color: #032859;
-  border-radius: 0 0 7px 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,14 +86,14 @@ header {
 /* head > head title css style*/
 .head-title {
   color: #ebeff3;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.head-title .title-first{
-    font-size: 2rem;
+.head-title .title-first {
+  font-size: 2rem;
 }
 
 /* head day css style*/
@@ -107,15 +104,14 @@ header {
   flex-direction: column;
 }
 
-.head-today .month-day{
-    font-weight: bold;
-    font-size: 1.5rem;
+.head-today .month-day {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-.head-today .year{
+.head-today .year {
   font-size: 1.1rem;
 }
-
 
 /* head menu button css style */
 
@@ -124,10 +120,9 @@ header {
   color: #ebeff3;
 }
 
-
 /* main-container in donedo list card css style */
 
-.donedo-list-container{
+.donedo-list-container {
   width: 100%;
   margin-top: 2rem;
 }
@@ -143,7 +138,7 @@ header {
 
 .donedo-card {
   height: 70px;
-  background-color: #0A9EBF;
+  background-color: #0a9ebf;
   border-radius: 10px;
   margin: 10px 20px;
   box-shadow: 7px 7px 7px 1px rgba(2, 29, 39, 0.3);
@@ -160,26 +155,26 @@ header {
   align-items: center;
 }
 
-.donedo-categary{
-    display: flex;
-    align-items: center;
+.donedo-categary {
+  display: flex;
+  align-items: center;
 }
 
 .donedo-category-icon {
-    font-size: 0.8rem;  
-    padding: 0 15px;
-    color: #79fa68;
+  font-size: 0.8rem;
+  padding: 0 15px;
+  color: #79fa68;
 }
 
 .donedo-card-add {
-    height: 70px;
-    background-color: #02817b;
-    border-radius: 10px;
-    margin: 10px 20px;
-    box-shadow: 7px 7px 7px 1px rgba(2, 29, 39, 0.3);
-    opacity:0.3;
-    border-style: dotted;
-  }
+  height: 70px;
+  background-color: #02817b;
+  border-radius: 10px;
+  margin: 10px 20px;
+  box-shadow: 7px 7px 7px 1px rgba(2, 29, 39, 0.3);
+  opacity: 0.3;
+  border-style: dotted;
+}
 
 .donedo-add-container {
   height: 100%;
@@ -195,24 +190,23 @@ header {
 
 /* modal */
 .modal {
-    width: 400px;
-    height: 200px;
-    background-color: #000000;
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    opacity: 0.7;
+  width: 400px;
+  height: 200px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  opacity: 0.7;
 }
 
 .modal-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* media queary */
 
@@ -232,13 +226,21 @@ header {
 
 @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
-.jejumyeongjo * { 
- font-family: 'Jeju Myeongjo', serif;
+.jejumyeongjo * {
+  font-family: "Jeju Myeongjo", serif;
 }
 
 @font-face {
-    font-family: 'KCC-eunyoung';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "KCC-eunyoung";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquare_acR";
+  src: url("../fonts/NanumSquare_acR.ttf");
+  font-weight: normal;
+  font-style: normal;
 }

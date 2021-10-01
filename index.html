@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>오늘 한 일</title>
-  <meta name="description" content="todo 웹페이지, 할 일을 기록할 수 있다." />
-    <meta
-      name="keywords"
-      content="donedo, donedo list"
-    />
+  <head>
+    <meta charset="UTF-8" />
+    <title>오늘 한 일</title>
+    <meta name="description" content="todo 웹페이지, 할 일을 기록할 수 있다." />
+    <meta name="keywords" content="donedo, donedo list" />
     <meta name="author" content="Han" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
@@ -69,69 +66,81 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <div class="wrap">
+  </head>
+  <body>
     <header>
       <div class="inner">
-          <div class="head-container">
-              <div class="head-today">
-                  <div class="month-day">
-                    9/<span style="font-size: 1.2rem;">4</span>
-                  </div>
-                  <div class="year">2021</div>
-              </div>
-              <div class="head-title">
-                  <div class="title-first">오늘 한 일</div>
-              </div>
-              <div class="head-menu-btn">
-                <i class="menu-btn-style fas fa-align-right"></i>
-              </div>
+        <div class="head-container">
+          <div class="head-today">
+            <div class="month-day">
+              9/<span style="font-size: 1.2rem;">4</span>
+            </div>
+            <div class="year">2021</div>
           </div>
+          <div class="head-title">
+            <div class="title-first">오늘 한 일</div>
+          </div>
+          <div class="head-menu-btn">
+            <i class="menu-btn-style fas fa-align-right"></i>
+          </div>
+        </div>
       </div>
     </header>
-    <section>
-        <div class="main-container">
-            <div class="main-panel">
-                <div class="donedo-list-container">
-                  <ul class="donedo-card-list">
-                      <li class="donedo-card">
-                          <div class="donedo-item-container">
-                              <div class="donedo-content">푸쉬업 완료!</div>
-                              <div class="donedo-categary">
-                                <div class="donedo-category-icon"><i class="fas fa-dumbbell"></i></div>
-                                <button id="delete-btn"><i class="far fa-trash-alt"></i></button>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="donedo-card">
-                        <div class="donedo-item-container">
-                            <div class="donedo-content">푸쉬업 완료!</div>
-                            <div class="donedo-categary">
-                              <div class="donedo-category-icon"><i class="fas fa-dumbbell"></i></div>
-                              <button id="delete-btn"><i class="far fa-trash-alt"></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="donedo-card">
-                        <div class="donedo-item-container">
-                            <div class="donedo-content">푸쉬업 완료!</div>
-                            <div class="donedo-categary">
-                              <div class="donedo-category-icon"><i class="fas fa-dumbbell"></i></div>
-                              <button id="delete-btn"><i class="far fa-trash-alt"></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="donedo-card-add">
-                        <div class="donedo-add-container">
-                            <div class="add-icon"><i class="fas fa-plus"></i></div>
-                        </div>
-                    </li>
-                  </ul>
-              </div>
+    <section class="main">
+      <div class="main-container">
+        <div class="inner">
+          <div class="main-panel">
+            <div class="donedo-list-container">
+              <ul class="donedo-card-list">
+                <li class="donedo-card">
+                  <div class="donedo-item-container">
+                    <div class="donedo-content">푸쉬업 완료!</div>
+                    <div class="donedo-categary">
+                      <div class="donedo-category-icon">
+                        <i class="fas fa-dumbbell"></i>
+                      </div>
+                      <button id="delete-btn">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="donedo-card">
+                  <div class="donedo-item-container">
+                    <div class="donedo-content">푸쉬업 완료!</div>
+                    <div class="donedo-categary">
+                      <div class="donedo-category-icon">
+                        <i class="fas fa-dumbbell"></i>
+                      </div>
+                      <button id="delete-btn">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="donedo-card">
+                  <div class="donedo-item-container">
+                    <div class="donedo-content">푸쉬업 완료!</div>
+                    <div class="donedo-categary">
+                      <div class="donedo-category-icon">
+                        <i class="fas fa-dumbbell"></i>
+                      </div>
+                      <button id="delete-btn">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="donedo-card-add">
+                  <div class="donedo-add-container">
+                    <div class="add-icon"><i class="fas fa-plus"></i></div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-  </div>
-</body>
+  </body>
 </html>
