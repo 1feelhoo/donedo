@@ -120,6 +120,15 @@ header {
   color: #ebeff3;
 }
 
+.head-menu-btn .menu-btn-style:active {
+  font-size: 1.5rem;
+}
+
+/* menu css style */
+.menu {
+  display: none;
+}
+
 /* main-container in donedo list card css style */
 
 .donedo-list-container {
@@ -188,6 +197,10 @@ header {
   align-items: center;
 }
 
+.donedo-card-add:hover {
+  opacity: 0.8;
+}
+
 /* modal */
 .modal {
   width: 400px;
@@ -210,7 +223,7 @@ header {
 
 /* media queary */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 980px) {
   .inner {
     max-width: 800px;
   }
