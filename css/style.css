@@ -206,6 +206,32 @@ header {
   background-color: #968c87;
 }
 
+/* footer */
+footer {
+  width: 736px;
+  margin-top: 30px;
+  border-top: 1px solid #e4e4e4;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  margin: 2rem auto;
+}
+
+.footer-message {
+  font-weight: bold;
+  color: #545e6f;
+  margin: 0.3rem 0.5rem;
+}
+
+.footer-contact {
+  color: #545e6f;
+  margin: 1rem 0.5rem;
+}
+
+.footer-copyright {
+  color: #545e6f;
+  margin: 1rem 0.5rem;
+}
+
 /* modal */
 .modal {
   width: 400px;
