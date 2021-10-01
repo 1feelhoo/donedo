@@ -201,6 +201,11 @@ header {
   opacity: 0.8;
 }
 
+.delete-btn {
+  border: none;
+  background-color: #968c87;
+}
+
 /* modal */
 .modal {
   width: 400px;
