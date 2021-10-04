@@ -68,14 +68,22 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="modal" id="input-modal">
+      <div class="modal-container">
+        <span class="close">&times;</span>
+        
+      </div>
+    </div>
     <header>
       <div class="inner">
         <div class="head-container">
           <div class="head-today">
             <div class="month-day">
-              9/<span style="font-size: 1.2rem;">4</span>
+              <span id="month-day"></sapn>
             </div>
-            <div class="year">2021</div>
+            <div class="year">
+              <span id="year"></span>
+            </div>
           </div>
           <div class="head-title">
             <div class="title-first">오늘 한 일</div>
@@ -108,7 +116,7 @@
                 </li>
                 </li>
                 <li class="donedo-card-add">
-                  <div class="donedo-add-container">
+                  <div class="donedo-add-container" id="add-btn">
                     <div class="add-icon"><i class="fas fa-plus"></i></div>
                   </div>
                 </li>
@@ -132,7 +140,7 @@
     <footer>
         <div class="inner">
           <div class="footer-message">
-            오늘 내가 해본 일들을 기억해보세요.
+            오늘 내가 한 일을 기록해보세요.
           </div>
           <div class="footer-contact">문의: hanfeelhoo@naver.com</div>
           <div class="footer-copyright">
@@ -140,5 +148,7 @@
           </div>
         </div>
       </footer>
+      <script src="./js/data.js"></script>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
