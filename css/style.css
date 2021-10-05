@@ -254,8 +254,9 @@ footer {
 
 .modal-container {
   background-color: #fefefe;
+  display: flex;
   margin: auto;
-  padding: 20px 0px;
+  padding: 20px;
   border: 1px solid #888;
   width: 600px;
   height: 300px;
@@ -263,7 +264,7 @@ footer {
 
 .close {
   color: #aaaaaa;
-  float: right;
+  display: inline-block;
   font-size: 28px;
   font-weight: bold;
 }
@@ -279,7 +280,7 @@ footer {
   display: flex;
   height: 100%;
   width: 100%;
-  margin-top: 10px;
+  margin: 15px;
   justify-content: center;
 }
 
@@ -314,16 +315,21 @@ footer {
 .category-item {
   font-size: 1rem;
   text-align: center;
+  margin: 0.8rem;
+  line-height: 0.1rem;
 }
 
 .category-form-header {
   font-size: 1.3rem;
   font-style: bold;
+  margin-bottom: 20px;
 }
 
 .category-item-checkbox {
-  margin-right: 15px 8px 0px 0px;
+  margin-right: 15px;
   display: inline-block;
+  position: relative;
+  top: 4px;
   text-align: center;
   width: 20px;
   height: 20px;
