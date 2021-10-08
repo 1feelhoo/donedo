@@ -65,7 +65,7 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
     <div class="modal" id="input-modal">
@@ -74,18 +74,30 @@
           <div class="write-form">
             <div class="write-form-item">
                 <span style="font-size: 1.3rem; font-style:bold;">한 일</span>
-                <input class="input-style" type="text" placeholder="한 일 작성">
+                <input class="input-style" id="donedo-content" type="text" placeholder="한 일 작성">
             </div>
             <div class="write-form-item">
-                <span style="font-size: 1.3rem; font-style:bold;">리뷰</span>
+                <span style="font-size: 1.3rem; font-style:bold;" >리뷰</span>
                 <textarea class="input-style" style="resize: none;" rows="6" cols="100"  placeholder="리뷰 작성"></textarea>
-            </di</form>
-          </div></form>
+            </div>
+          </div>
           <div class="category-form">
             <div class="category-form-header">카테고리</div>
-            <input type="checkbox" name="sports" class="category-item-checkbox"/><label class="category-item">운동</label>
-            <input type="checkbox" name="sports" class="category-item-checkbox"/><label class="category-item">운동</label>
-            <input type="checkbox" name="sports" class="category-item-checkbox"/><label class="category-item">운동</label>
+            <div class="checkbox-form">
+              <input type="checkbox" name="sports" class="category-item-checkbox"/><label class="category-item">운동</label>
+            </div>
+            <div class="checkbox-form">
+              <input type="checkbox" name="study" class="category-item-checkbox"/><label class="category-item">공부</label>
+            </div>
+            <div class="checkbox-form">
+              <input type="checkbox" name="cooking" class="category-item-checkbox"/><label class="category-item">요리</label>
+            </div>
+            <div class="checkbox-form">
+              <input type="checkbox" name="hobby" class="category-item-checkbox"/><label class="category-item">취미</label>
+            </div>
+          </div>
+          <div class="submit" id="submit-btn">
+            작성
           </div>
           </form>
           <span class="close">&times;</span>
@@ -117,21 +129,6 @@
           <div class="main-panel">
             <div class="donedo-list-container">
               <ul class="donedo-card-list">
-                <li class="donedo-card">
-                  <div class="donedo-item-container">
-                    <div class="donedo-content">1. 푸쉬업 완료!</div>
-                    <div class="donedo-categary">
-                      <div class="donedo-category-icon">
-                        운동
-                        <i class="fas fa-dumbbell"></i>
-                      </div>
-                      <button class="delete-btn">
-                        <i class="far fa-trash-alt"></i>
-                      </button>
-                    </div>
-                  </div>
-                </li>
-                </li>
                 <li class="donedo-card-add">
                   <div class="donedo-add-container" id="add-btn">
                     <div class="add-icon"><i class="fas fa-plus"></i></div>
