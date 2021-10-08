@@ -6,6 +6,7 @@ submitBtn.addEventListener("click", () => {
   const cardAddBtn = classList[0];
   const cardParent = cardAddBtn.parentNode;
   const newCardLi = document.createElement("li");
+  const getDoneDoTitle = document.getElementById("donedo-title");
   const getDoneDoContent = document.getElementById("donedo-content");
   const categaryList = document.getElementsByName("category");
   const categaryIconList = [
@@ -16,8 +17,11 @@ submitBtn.addEventListener("click", () => {
   ];
 
   // 한 일 작성 안했을 떄 작성하라고 알려주기
-  if (getDoneDoContent.value === "") {
+  if (getDoneDoTitle.value === "") {
     alert("한 일을 작성해주세요!");
+    return;
+  } else if (getDoneDoContent.value === "") {
+    alert("리뷰를 작성해주세요!");
     return;
   }
 
@@ -37,7 +41,7 @@ submitBtn.addEventListener("click", () => {
     <div class="donedo-content">` +
     (listLength + 1) +
     `. ` +
-    getDoneDoContent.value +
+    getDoneDoTitle.value +
     `</div>
     <div class="donedo-categary">
       <div class="donedo-category-icon">` +
@@ -53,6 +57,7 @@ submitBtn.addEventListener("click", () => {
     
   </div>`;
 
+  getDoneDoTitle.value = null;
   getDoneDoContent.value = null;
   colseModal();
   cardParent.insertBefore(newCardLi, cardAddBtn);

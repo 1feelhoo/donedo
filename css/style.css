@@ -208,7 +208,15 @@ header {
 
 .delete-btn {
   border: none;
+  color: #aaaaaa;
   background-color: #968c87;
+}
+
+.delete-btn:hover,
+.delete-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* footer */
@@ -290,6 +298,7 @@ footer {
   height: 100%;
   flex-direction: column;
   justify-content: center;
+  margin-right: 20px;
 }
 
 .write-form-item {
@@ -298,8 +307,8 @@ footer {
 }
 
 .input-style {
-  width: 60%;
-  margin: 10px 0px 20px 15px;
+  width: 100%;
+  margin: 10px 0px 20px 0px;
   padding: 10px;
 }
 
