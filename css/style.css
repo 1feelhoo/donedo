@@ -125,13 +125,30 @@ header {
   color: #ebeff3;
 }
 
-.head-menu-btn .menu-btn-style:active {
-  font-size: 1.5rem;
+.head-menu-btn .menu-btn-style:hover,
+.head-menu-btn .menu-btn-style:focus {
+  color: #000;
+  cursor: pointer;
 }
 
 /* menu css style */
 .menu {
-  display: none;
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 700px;
+  z-index: 99999;
+  width: 300px;
+  height: 80px;
+  background-color: #888;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 /* main-container in donedo list card css style */
@@ -215,7 +232,6 @@ header {
 .delete-btn:hover,
 .delete-btn:focus {
   color: #000;
-  text-decoration: none;
   cursor: pointer;
 }
 
