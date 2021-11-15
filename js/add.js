@@ -62,7 +62,7 @@ submitBtn.addEventListener("click", () => {
   colseModal();
   cardParent.insertBefore(newCardLi, cardAddBtn);
 
-  const delScript = document.createElement("script");
-  delScript.setAttribute("src", "./js/delete.js");
-  document.body.appendChild(delScript);
+  // const delScript = document.createElement("script");
+  // delScript.setAttribute("src", "./js/delete.js");
+  // document.body.appendChild(delScript);
 });
