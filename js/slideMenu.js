@@ -1,8 +1,4 @@
-// menu close btn 
-const colseMenuBtn = classList[1];
 
-const showMenuBtn = document.getElementsByClassName("head-menu-btn")[0];
-const menu = document.getElementById("slide-menu");
 
 showMenuBtn.addEventListener("click", () => {
     menu.style.display = "block";

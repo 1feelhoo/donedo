@@ -68,41 +68,6 @@
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
-    <div class="modal" id="input-modal">
-      <div class="modal-container">
-        <form action="#" class="data-form">
-          <div class="write-form">
-            <div class="write-form-item">
-                <span style="font-size: 1.3rem; font-style:bold;">한 일</span>
-                <input class="input-style" id="donedo-title" type="text" placeholder="한 일 작성">
-            </div>
-            <div class="write-form-item">
-                <span style="font-size: 1.3rem; font-style:bold;" >리뷰</span>
-                <textarea class="input-style" id="donedo-content" style="resize: none;" rows="6" cols="100"  placeholder="리뷰 작성"></textarea>
-            </div>
-          </div>
-          <div class="category-form">
-            <div class="category-form-header">카테고리</div>
-            <div class="checkbox-form">
-              <input type="radio" value="운동" name="category" class="category-item-checkbox"/><label class="category-item">운동</label>
-            </div>
-            <div class="checkbox-form">
-              <input type="radio" value="공부" name="category" class="category-item-checkbox"/><label class="category-item">공부</label>
-            </div>
-            <div class="checkbox-form">
-              <input type="radio" value="요리" name="category" class="category-item-checkbox"/><label class="category-item">요리</label>
-            </div>
-            <div class="checkbox-form">
-              <input type="radio" value="취미" name="category" class="category-item-checkbox"/><label class="category-item">취미</label>
-            </div>
-          </div>
-          <div class="submit" id="submit-btn">
-            작성
-          </div>
-          </form>
-          <span class="close">&times;</span>
-        </div>
-    </div>
     <header>
       <div class="inner">
         <div class="head-container">
@@ -129,7 +94,7 @@
         <div class="menu-container">
           <ul class="menu-list">
             <li class="menu-detail"><a href="./index.html">내가 한 일</a></li>
-            <li class="menu-detail"><a href="#">통계량</a></li>
+            <li class="menu-detail"><a href="./statistics.html">통계량</a></li>
             <li class="menu-detail"><a href="#">로그인</a></li>
           </ul>
         </div>
@@ -138,17 +103,7 @@
     <section class="main">
       <div class="main-container">
         <div class="inner">
-          <div class="main-panel">
-            <div class="donedo-list-container">
-              <ul class="donedo-card-list">
-                <li class="donedo-card-add">
-                  <div class="donedo-add-container" id="add-btn">
-                    <div class="add-icon"><i class="fas fa-plus"></i></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -163,11 +118,6 @@
           </div>
         </div>
       </footer>
-      <script src="./js/core.js"></script>
       <script src="./js/date.js"></script>
-      <script src="./js/modal.js"></script>
-      <script src="./js/add.js"></script>
-      <script src="./js/slideMenu.js"></script>
-      <script src="./js/delete.js"></script>
   </body>
 </html>

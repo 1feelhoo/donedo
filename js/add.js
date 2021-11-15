@@ -1,5 +1,3 @@
-const submitBtn = document.getElementById("submit-btn");
-
 // done do list add func
 submitBtn.addEventListener("click", () => {
   const classList = document.getElementsByClassName("donedo-card-add");
