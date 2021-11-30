@@ -58,16 +58,17 @@
     ></script>
 
     <!-- Spoca Han Sans Neo -->
-    <link
+    <!-- <link
       href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
+    <div class="close" style="display: none;"></div>
     <header>
       <div class="inner">
         <div class="head-container">
@@ -103,7 +104,11 @@
     <section class="main">
       <div class="main-container">
         <div class="inner">
-          <h2 id="calender-month"></h2>
+          <div class="month-container">
+            <div class="prev-month"><i class="fas fa-chevron-left"></i></div>
+            <div id="calender-month"></div>
+            <div class="next-month"><i class="fas fa-chevron-right"></i></div>
+          </div>
           <div class="calendar-container">
             <div class="week">
               <div class="day">일</div>
@@ -176,5 +181,6 @@
       </footer>
       <script src="./js/core.js"></script>
       <script src="./js/date.js"></script>
+      <script src="./js/slideMenu.js"></script>
   </body>
 </html>

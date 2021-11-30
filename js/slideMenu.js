@@ -1,5 +1,3 @@
-
-
 showMenuBtn.addEventListener("click", () => {
     menu.style.display = "block";
     showMenuBtn.style.display = "none";

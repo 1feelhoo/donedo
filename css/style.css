@@ -422,6 +422,31 @@ footer {
   border: 1px solid #3f464d;
 }
 
+.month-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calender-month {
+  margin: 0;
+  padding: 20px;
+  width: auto;
+  font-size: 1.6rem;
+  font-style: bold;
+}
+
+.prev-month {
+  display: inline;
+  cursor: pointer;
+}
+
+.next-month {
+  display: inline;
+  cursor: pointer;
+}
+
 /* media queary */
 
 @media only screen and (min-width: 980px) {
