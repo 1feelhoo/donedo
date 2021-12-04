@@ -420,7 +420,16 @@ footer {
   width: 75px;
   height: 75px;
   border: 1px solid #3f464d;
+  text-align: center
 }
+
+.day-default {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #3f464d;
+    text-align: center;
+    line-height: 75px;
+  }
 
 .month-container {
   width: 100%;
